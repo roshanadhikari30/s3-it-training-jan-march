@@ -6,7 +6,7 @@ public class HelloWorld {
         System.out.println("Hello World ! Its Kaialsh Dhakal");
         System.out.println("We are learning GIT");
         System.out.println("we have lerned GIT");
-       System.out.println("Shiddarth Bista");
+       System.out.println("Second Pull");
 
 
     }
