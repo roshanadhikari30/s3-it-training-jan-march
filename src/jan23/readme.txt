@@ -22,5 +22,28 @@ Data structures
 
 Access Modifiers
 
+Learnign outcomes
+
+    Methods
+    Look into the Libraries
+    combination of control statements
+        if else and loops
+    Time management
+    Understand the problem
+    wrote the test cases (manual)
+        testing
+            we provided multiple test cases
+                manual testing
+                future - write junit tests cases
+                    spring framework
+    Object creation
+        Main main = new Main();
+    Defined primitive data types
+        int, boolean
+    we defined variables
+    pushed the code to the git
+
+
+
 
 
