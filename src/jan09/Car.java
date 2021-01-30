@@ -2,10 +2,12 @@ package jan09;
 
 public class Car {
 
-public static void main (String[] args) {
-    String car = "BMW";
+
+    String type = "BMW";
     int price = 50000;
-    System.out.println(car);
-}
+
+    public int outTheDoorPrice() {
+        return 2000 + 500 + 500;
+    }
 
 }
