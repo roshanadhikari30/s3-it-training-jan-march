@@ -1,17 +1,32 @@
 package com.example.demo.api;
 
-import org.slf4j.MDC;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MySecondApi {
 
-    @GetMapping("/reverse")
-    public int reverse() {
-        System.out.println(MDC.get("x"));
-        int x = 1234;
-        int reversed = 4321;
-        return reversed;
+    @Autowired //will create an object, internally calls the new keyword
+    LaptopServiceProvider laptopServiceProvider;
+
+
+    @Value("$name")
+    String name;
+
+    @GetMapping
+    public int getPrice() {
+        return laptopServiceProvider.laptopPrice;
+    }
+
+    @GetMapping("mySecondApi")
+    public int getPriceForAnotherLaptio() {
+        return laptopServiceProvider.getLaptopPriceSecond;
+    }
+
+    public void getName(){
+        System.out.println(name);
     }
 }
+
