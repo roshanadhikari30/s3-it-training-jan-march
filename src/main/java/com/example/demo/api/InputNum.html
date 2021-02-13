@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INPUT FORM</title>
+</head>
+<body>
+
+
+
+<!--<button class="button" onclick="window.location.href ='/reverse';">Send</button>-->
+
+
+<form th:action="@{/reverse}" method="get">
+    <label>Please enter a number you want to reverse: </label>
+    <input type="number" name="doc">
+    <button type="submit">Send</button>
+</form>
+
+</body>
+</html>
+
+
+
+
+
