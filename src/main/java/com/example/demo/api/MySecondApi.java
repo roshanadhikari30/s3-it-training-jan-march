@@ -10,7 +10,7 @@ public class MySecondApi {
 
     @Autowired
     Laptop laptop;
-
+//
     @Value("ted")
     String name;
 

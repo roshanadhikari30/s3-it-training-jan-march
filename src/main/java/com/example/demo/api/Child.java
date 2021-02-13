@@ -6,7 +6,7 @@ public class Child extends Parent{
   //  public void getDocuments(){
    //     System.out.println("pop");
    // }
-
+//
     public static void main(String[] args) {
         Child child = new Child();
         System.out.println(child.money);
